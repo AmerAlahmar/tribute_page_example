@@ -1,0 +1,53 @@
+#main {
+    background: #eee;
+    border-radius: 8px;
+    margin: 30px 5px;
+    padding: 20px;
+    display: grid;
+    grid-template: "tribute-title-dev" "tribute-img-div" "tribute-info-dev" "tribute-more-dev" / minmax(250px, 1fr);
+    justify-items: center;
+}
+
+#tribute-title-dev {
+    grid-area: tribute-title-dev;
+    text-align: center;
+}
+
+#title {
+    font-size: 2.5em;
+    margin: 12px 0px;
+}
+
+#subtitle {
+    font-size: 1.15em;
+}
+
+#tribute-img-div {
+    grid-area: tribute-img-div;
+    border-radius: 8px;
+    background: white;
+    justify-self: stretch;
+    padding: 1em;
+    margin: 0;
+    text-align: center;
+}
+
+#image {
+    max-width: 100%;
+}
+
+#img-caption {
+    font-size: 1.1em;
+}
+
+#tribute-info-dev {
+    grid-area: tribute-info-dev;
+}
+
+#tribute-info-dev h3 {
+    text-align: center;
+}
+
+#time-line {
+    font-weight: 300;
+}
