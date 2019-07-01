@@ -1,3 +1,25 @@
+@keyframes remove-border {
+    0% {
+        border-radius: 50%;
+        border: rgb(146, 146, 146) 0.5px solid;
+    }
+    100% {
+        border-radius: 5%;
+        border: white 0px solid;
+    }
+}
+
+@keyframes bring-border {
+    0% {
+        border-radius: 5%;
+        border: white 0px solid;
+    }
+    100% {
+        border-radius: 50%;
+        border: rgb(146, 146, 146) 0.5px solid;
+    }
+}
+
 #main {
     display: grid;
     grid-template: "tribute-title-dev" "tribute-img-div" "tribute-info-dev" "tribute-more-dev" / minmax(250px, 1fr);
@@ -25,7 +47,7 @@
     color: rgb(47, 47, 47);
 }
 
-#tribute-img-div {
+#img-div {
     grid-area: tribute-img-div;
     border-radius: 8px;
     background: white;
@@ -36,7 +58,19 @@
 }
 
 #image {
+    display: block;
     max-width: 100%;
+    margin: 0 auto;
+    animation-name: bring-border;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+
+#image:hover {
+    animation-name: remove-border;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 
 #img-caption {
@@ -44,7 +78,7 @@
     color: rgb(90, 90, 90);
 }
 
-#tribute-info-dev {
+#tribute-info {
     grid-area: tribute-info-dev;
     justify-items: center;
 }
