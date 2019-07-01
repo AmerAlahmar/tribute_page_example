@@ -1,11 +1,12 @@
 #main {
-    background: #eee;
-    border-radius: 8px;
-    margin: 30px 5px;
-    padding: 20px;
     display: grid;
     grid-template: "tribute-title-dev" "tribute-img-div" "tribute-info-dev" "tribute-more-dev" / minmax(250px, 1fr);
     justify-items: center;
+    background: rgb(225, 225, 225);
+    border-radius: 8px;
+    margin: 30px 5px;
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
 }
 
 #tribute-title-dev {
@@ -14,12 +15,14 @@
 }
 
 #title {
-    font-size: 2.5em;
+    font-size: 2.7em;
     margin: 12px 0px;
+    color: rgb(45, 45, 45);
 }
 
 #subtitle {
-    font-size: 1.15em;
+    font-size: 1.12em;
+    color: rgb(47, 47, 47);
 }
 
 #tribute-img-div {
@@ -37,17 +40,66 @@
 }
 
 #img-caption {
-    font-size: 1.1em;
+    margin-top: 10px;
+    color: rgb(90, 90, 90);
 }
 
 #tribute-info-dev {
     grid-area: tribute-info-dev;
+    justify-items: center;
 }
 
-#tribute-info-dev h3 {
+#tribute-info-header {
+    margin: 50px auto;
     text-align: center;
+    color: rgb(50, 50, 50);
 }
 
-#time-line {
-    font-weight: 300;
+#tribute-info-time-line {
+    max-width: 620px;
+    min-width: 250px;
+    margin: 0 auto;
+    line-height: 1.4;
+    text-align: left;
+    font-weight: 500;
+    font-size: 1.15em;
+}
+
+#tribute-info-time-line li {
+    margin-bottom: 20px;
+    color: rgb(55, 55, 55);
+}
+
+.quotation {
+    margin: 50px auto 30px auto;
+}
+
+.quotation-text {
+    text-align: justify;
+    color: rgb(60, 60, 60);
+}
+
+.quotation-author {
+    color: rgb(70, 70, 70);
+}
+
+#tribute-more-dev {
+    font-size: 1.1em;
+    color: rgb(53, 53, 53);
+}
+
+a {
+    font-size: 1em;
+    color: #305879;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #4077a3;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #52aaf3;
+    text-decoration: underline;
 }
